@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      jsonapi_resources :players, only: [:index, :show]
+      jsonapi_resources :players, only: [:index, :show, :create]
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
