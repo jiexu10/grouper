@@ -8,6 +8,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('players', function() {
     this.route('new');
+    this.route('show', { path: '/:player_id' });
+    this.route('edit', { path: '/:player_id/edit'})
   });
 });
 

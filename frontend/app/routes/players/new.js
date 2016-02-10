@@ -8,7 +8,7 @@ export default Ember.Route.extend({
   isDisabled: Ember.computed.empty('model.username'),
 
   actions: {
-    addUser(newUser) {
+    addPlayer(newUser) {
       newUser.save().then(() => this.transitionTo('players'));
     },
 
