@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('player')
+    return this.store.findAll('player');
   },
 
   actions: {
@@ -14,4 +14,4 @@ export default Ember.Route.extend({
       }
     }
   }
-})
+});
