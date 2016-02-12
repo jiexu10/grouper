@@ -1,2 +1,1 @@
-{{input type='text' placeholder='Add a new user.' value=model.username}}
-<button {{action 'addPlayer' model}} disabled={{isDisabled}}>Add User</button>
+{{player-item-form item=model buttonLabel='Add Player' action='addPlayer'}}

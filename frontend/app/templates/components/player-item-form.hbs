@@ -1,0 +1,3 @@
+{{input type='text' placeholder='Name of player.' value=item.username}}
+<button {{action 'buttonClicked' item}} disabled="{{unless item.isValid 'disabled'}}">{{buttonLabel}}</button>
+{{yield}}
