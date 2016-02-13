@@ -1,6 +1,7 @@
 <h3>List of Players</h3>
 <br>
 {{#each model as |player|}}
-  Username: {{#link-to 'players.show' player}}{{player.username}}{{/link-to}}
-  <button {{action 'deletePlayer' player}}>Delete Player</button><br>
+  {{#player-item item=player}}
+    <button {{action 'deletePlayer' player}}>Delete Player</button><br>
+  {{/player-item}}
 {{/each}}
